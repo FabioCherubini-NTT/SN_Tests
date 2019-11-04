@@ -48,15 +48,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-02-19 13:14:07</sys_created_on>
-        <sys_id>f7214f5c37732300f77e036973990e80</sys_id>
+        <sys_id>221ce7dbdb340010a6449d62ba9619a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_299056_flynow_fn_droneincident_inbound</sys_name>
         <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
         <sys_policy/>
         <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
-        <sys_update_name>sys_dictionary_x_299056_flynow_fn_droneincident_inbound_null</sys_update_name>
+        <sys_update_name>sys_dictionary_x_299056_flynow_fn_droneincident_inbound_NULL</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-19 13:14:07</sys_updated_on>
+        <sys_updated_on>2019-11-04 13:17:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
