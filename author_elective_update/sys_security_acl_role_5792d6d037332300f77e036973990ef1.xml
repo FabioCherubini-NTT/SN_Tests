@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 09:50:39</sys_created_on>
+        <sys_id>5792d6d037332300f77e036973990ef1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_299056_flynow_incident_drone.x_299056_flynow.user</sys_name>
+        <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
+        <sys_security_acl display_value="x_299056_flynow_incident_drone">1f92d6d037332300f77e036973990eee</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5792d6d037332300f77e036973990ef1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 09:50:39</sys_updated_on>
+        <sys_user_role display_value="x_299056_flynow.user" name="x_299056_flynow.user">d05f0a0437f32300f77e036973990e1b</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FlyNow">d05f4ec037f32300f77e036973990e13</application>
+        <file_path/>
+        <instance_id>185c9054dbdd9fc08264f70fbf96192c</instance_id>
+        <instance_name>dev54786</instance_name>
+        <name>sys_security_acl_role_5792d6d037332300f77e036973990ef1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-19 09:50:39</sys_created_on><sys_id>5792d6d037332300f77e036973990ef1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_299056_flynow_incident_drone.x_299056_flynow.user</sys_name><sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package><sys_policy/><sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope><sys_security_acl display_value="x_299056_flynow_incident_drone">1f92d6d037332300f77e036973990eee</sys_security_acl><sys_update_name>sys_security_acl_role_5792d6d037332300f77e036973990ef1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-19 09:50:39</sys_updated_on><sys_user_role display_value="x_299056_flynow.user" name="x_299056_flynow.user">d05f0a0437f32300f77e036973990e1b</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1335076817</payload_hash>
+        <record_name>x_299056_flynow_incident_drone.x_299056_flynow.user</record_name>
+        <reverted_from/>
+        <source>abdf4e0437f32300f77e036973990e97</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 09:50:39</sys_created_on>
+        <sys_id>9b92d6d037332300f77e036973990ef3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>169052a1c020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 09:50:39</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d392d6d0af3323004a7e0dea18cb62f3</update_guid>
+        <update_guid_history>d392d6d0af3323004a7e0dea18cb62f3:-1335076817</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_299056_flynow_incident_drone.x_299056_flynow.user">bc641e1437332300f77e036973990e64</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 09:58:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>b54240c944394be693954067884d83e4</sys_id>
+        <sys_metadata>5792d6d037332300f77e036973990ef1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_299056_flynow_incident_drone.x_299056_flynow.user</sys_name>
+        <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
+        <sys_parent display_value="">1f92d6d037332300f77e036973990eee</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
+        <sys_scope_delete display_value="">74a3f0f44e3941f68355e2e521b563a4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_5792d6d037332300f77e036973990ef1</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_5792d6d037332300f77e036973990ef1">9b92d6d037332300f77e036973990ef3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 09:58:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

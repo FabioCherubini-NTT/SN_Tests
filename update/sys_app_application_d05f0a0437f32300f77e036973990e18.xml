@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>FlyNow_Menu</name>
+        <order/>
+        <roles>x_299056_flynow.user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-18 14:57:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d05f0a0437f32300f77e036973990e18</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FlyNow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
+        <sys_update_name>sys_app_application_d05f0a0437f32300f77e036973990e18</sys_update_name>
+        <sys_updated_by>caputog</sys_updated_by>
+        <sys_updated_on>2019-02-20 15:49:45</sys_updated_on>
+        <title>FlyNow</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

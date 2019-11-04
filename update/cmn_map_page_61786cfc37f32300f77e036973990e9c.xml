@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_page">
+    <cmn_map_page action="INSERT_OR_UPDATE">
+        <center_address>Rome, Italy</center_address>
+        <center_latitude>41.8905198</center_latitude>
+        <center_longitude>12.4942486</center_longitude>
+        <controls_size>large</controls_size>
+        <initial_zoom>6</initial_zoom>
+        <name>x_299056_flynow_Drone Incident</name>
+        <overview>true</overview>
+        <refresh_on_zoom>true</refresh_on_zoom>
+        <script><![CDATA[var gr = new GlideRecord("x_299056_flynow_drone_incident");
+gr.addQuery("state","NOT IN", "6,7,8"); //not cancelled, resolved or closed
+
+//gr.addQuery('priority', '1');
+gr.addActiveQuery();
+gr.query();
+while (gr.next()) {
+	if(gr.u_latitude && gr.u_longitude){
+	   var item = map.addItem(gr);
+	   item.latitude = String(gr.u_latitude);
+	   item.longitude = String(gr.u_longitude);
+	   item.dialog_title = gr.getDisplayValue();
+	   //item.icon = "https://maps.google.com/mapfiles/kml/pal3/icon51.png";
+		
+		var category = gr.getValue("category");
+		switch(category){
+			case '1': {item.icon = "https://maps.google.com/mapfiles/kml/pal4/icon17.png";} break;
+			case '2': {item.icon = "https://maps.google.com/mapfiles/kml/pal3/icon55.png";} break;
+			case '3': {item.icon = "https://maps.google.com/mapfiles/kml/pal3/icon33.png";} break;
+				
+			default:{item.icon = "https://maps.google.com/mapfiles/kml/pal3/icon55.png";}
+		}
+		
+		item.icon_width = "32";
+		item.icon_height = "32";
+	}
+}]]></script>
+        <show_device_location>false</show_device_location>
+        <suffix>Drone Incident</suffix>
+        <sys_class_name>cmn_map_page</sys_class_name>
+        <sys_created_by>caputog</sys_created_by>
+        <sys_created_on>2019-02-20 15:23:49</sys_created_on>
+        <sys_id>61786cfc37f32300f77e036973990e9c</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>x_299056_flynow_Drone Incident</sys_name>
+        <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
+        <sys_update_name>cmn_map_page_61786cfc37f32300f77e036973990e9c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-26 11:17:30</sys_updated_on>
+        <type>terrain</type>
+        <type_selection>buttons</type_selection>
+    </cmn_map_page>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="FlyNow">d05f0a0437f32300f77e036973990e18</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint>See locations of all Drone Incidents</hint>
+        <homepage/>
+        <image>images/icons/incidents_critical.gif</image>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Critical Incidents Map</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query>map_page.do?sysparm_name=x_299056_flynow_Drone Incident</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>caputog</sys_created_by>
+        <sys_created_on>2019-02-20 15:48:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f20ee87437372300f77e036973990e3f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Drone Incidents Map</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
+        <sys_update_name>sys_app_module_f20ee87437372300f77e036973990e3f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-26 10:41:07</sys_updated_on>
+        <timeline_page/>
+        <title>Drone Incidents Map</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

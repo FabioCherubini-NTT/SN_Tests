@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>DRONE INCIDENT</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	
+    var header = {};
+    var data = {};
+    var body = {};
+    var resp = {};
+    var details = '';
+    var mex = 'OK';
+    var status = 0;
+	var newId = '';
+	var newNumber = '';
+
+    try{
+		body = request.body.data;
+		if(Object.keys(body).length>0){
+			if(body.Header!==undefined)
+				header = body.Header;
+			if(body.Parameters!==undefined){
+				data = body.Parameters;
+			
+				newDrInc = new GlideRecord('x_299056_flynow_drone_incident');
+				newDrInc.initialize();
+
+				//Campi usati per test iniziale
+// 				newDrInc.u_latitude = data.Latitude;
+// 				newDrInc.u_longitude = data.Longitude;
+// 				newDrInc.u_altitude = data.Altitude;
+// 				newDrInc.description = data.Description;
+// 				newDrInc.short_description = data.ShortDescription;
+// 				newDrInc.priority = data.Priority;
+// 				newDrInc.category = data.Category;
+				
+				
+				newDrInc.short_description = data.short_description;
+				newDrInc.assignment_group = data.assignment_group;
+				newDrInc.urgency = data.urgency;
+				newDrInc.impact = data.impact;
+				newDrInc.description = data.description;
+				newDrInc.priority = data.priority;
+
+				newId = newDrInc.insert();
+				newNumber = newDrInc.number;
+				gs.info("FC- Nuovo DroneIncident inserito: "+newId);
+			}
+		}
+	}catch(ex){
+		mex = ex.message;
+		status = -1;
+		details = ex.detail;
+	}
+			
+	finally{
+		//set the response body with the resp object
+		resp.status = status;
+		resp.message = mex;
+		resp.details = details;
+		resp.newIncidentSysId = newId;
+		resp.newIncidentNumber = newNumber;
+		response.setBody(resp);
+	}
+
+
+
+
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_299056_flynow/fninbound/drone_incident</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/drone_incident</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-18 16:19:04</sys_created_on>
+        <sys_id>6721a64037372300f77e036973990edc</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>DRONE INCIDENT</sys_name>
+        <sys_package display_value="FlyNow" source="x_299056_flynow">d05f4ec037f32300f77e036973990e13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FlyNow">d05f4ec037f32300f77e036973990e13</sys_scope>
+        <sys_update_name>sys_ws_operation_6721a64037372300f77e036973990edc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:40:18</sys_updated_on>
+        <web_service_definition display_value="FNInbound">e2d0e24037372300f77e036973990e81</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

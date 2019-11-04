@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="incident" label="Drone Incident" max_length="40" name="x_299056_flynow_drone_incident" sizeclass="7" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Altitude" max_length="40" name="u_altitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Latitude" max_length="40" name="u_latitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Longitude" max_length="40" name="u_longitude" type="string"/>
+    </element>
+</database>
